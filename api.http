@@ -1,0 +1,15 @@
+POST http://localhost:8000/api/v1/users HTTP/1.1
+content-type: application/json
+
+{
+    "first_name": "José ",
+    "last_name": "Zeidan",
+    "gender": "male",
+    "roles": [
+        "student" 
+    ]
+}
+###
+
+GET http://localhost:8000/api/v1/users HTTP/1.1
+###
