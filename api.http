@@ -1,9 +1,14 @@
+
+GET http://localhost:8000/api/v1/users HTTP/1.1
+###
+
 POST http://localhost:8000/api/v1/users HTTP/1.1
 content-type: application/json
 
 {
     "first_name": "José ",
-    "last_name": "Zeidan",
+    "last_name": "Leonel",
+    "middle_name": "Zeidan",
     "gender": "male",
     "roles": [
         "student" 
@@ -11,5 +16,19 @@ content-type: application/json
 }
 ###
 
-GET http://localhost:8000/api/v1/users HTTP/1.1
+DELETE http://localhost:8000/api/v1/users/da58330b-8de3-4928-9180-1b37d1031364 HTTP/1.1
+###
+
+
+PUT http://localhost:8000/api/v1/users/c623cdaa-25cb-4587-9235-7632292368ee HTTP/1.1
+content-type: application/json
+
+{
+    "first_name": "Lucas ",
+    "last_name": "Leonel",
+    "middle_name": "Zeidan",
+    "roles": [
+        "admin" 
+    ]
+}
 ###
